@@ -1,10 +1,12 @@
 import re
+import gzip
+import sys
 
-f='/scratch/lsa_flux/baizm/snpCalling/filtered_final.vcf' 
-o='/scratch/lsa_flux/baizm/bgc/loci.csv' 
+in_file = sys.argv[1]
+out_file = sys.argv[2]
 
-f=open(f, 'r')
-o=open(o, 'w')
+f=gzip.open(in_file, 'r')
+o=open(out_file, 'w')
 
 n_loci=-1
 
