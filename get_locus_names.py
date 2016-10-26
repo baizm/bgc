@@ -20,3 +20,5 @@ for i in f:
 #to make file with bgc locus numbers & names corresponding from vcf file
 #e.g.:
 #loc_0 flattened_line_0 1234
+#use grep w/outliers ID file from R to associate locus index with contig/position:
+#grep -wf beta_outliers_id.txt loci.txt > beta_outliers_contigs.txt
